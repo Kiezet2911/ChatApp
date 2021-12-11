@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FirebaseAppChat.iml" filepath="$PROJECT_DIR$/.idea/modules/FirebaseAppChat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FirebaseAppChat.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FirebaseAppChat.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/commonlib/FirebaseAppChat.commonlib.iml" filepath="$PROJECT_DIR$/.idea/modules/commonlib/FirebaseAppChat.commonlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobilertc/FirebaseAppChat.mobilertc.iml" filepath="$PROJECT_DIR$/.idea/modules/mobilertc/FirebaseAppChat.mobilertc.iml" />
+    </modules>
+  </component>
+</project>

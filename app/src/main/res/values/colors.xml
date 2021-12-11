@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Primary">#CFC5C5</color>
+    <color name="PrimaryNight">#000000</color>
+    
+    <color name="dark_gray">#999999</color>
+    <color name="dark_gray_post">#DDDDDD</color>
+    <color name="mainBackgroup">#D7D7D7</color>
+
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    
+    <color name="yellow_hutech">#fdec00</color>
+    <color name="blue_line_hutech">#0162af</color>
+    
+    <color name="BackGroundSearch">#A696F9</color>
+    <color name="EditTextSearch">#DFD8FC</color>
+    
+    <color name="black">#FF000000</color>
+    <color name="Red">#F44336</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="ButtonColor">#999999</color>
+    <color name="ButtonColorNight">#0099FF</color>
+
+
+    <color name="TextColor">#000000</color>
+    <color name="TextColorNight">#FFFFFF</color>
+</resources>
