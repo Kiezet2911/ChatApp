@@ -1,6 +1,7 @@
 package com.example.firebaseappchat.TaoMeme
 
 import android.Manifest.permission.WRITE_EXTERNAL_STORAGE
+import android.R.attr
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -23,9 +24,20 @@ import java.io.File
 import java.io.FileOutputStream
 import java.lang.Exception
 import android.view.MotionEvent
+
 import android.graphics.PointF
+
+import android.R.attr.mode
 import android.annotation.SuppressLint
+import android.view.View.OnTouchListener
 import android.widget.TextView
+
+
+
+
+
+
+
 class CreateMemeActivity : AppCompatActivity() {
     var lastEvent: FloatArray? = null
     var d = 0f
@@ -86,14 +98,12 @@ class CreateMemeActivity : AppCompatActivity() {
         //
         btnSave.isEnabled = false
         btnShare.isEnabled = false
-
         //
         btnLoad.setOnClickListener() {
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"
             startActivityForResult(intent, 0)
         }
-
         btnSave.setOnClickListener {
             val context = findViewById<View>(R.id.ContextIMG)
             val bitmap = getScreenShot(context)
@@ -132,6 +142,10 @@ class CreateMemeActivity : AppCompatActivity() {
                 TxtImgBottom.text = txtBottom_Text.text.toString()
             }
         })
+
+//        TxtImgTop.setOnClickListener {
+//
+//        }
 
         TxtImgTop.setOnTouchListener { v, event ->
 
@@ -172,6 +186,10 @@ class CreateMemeActivity : AppCompatActivity() {
             viewTransformation(view, event)
             true
         }
+
+//        TxtImgBottom.setOnClickListener {
+//
+//        }
 
         TxtImgBottom.setOnTouchListener { v, event ->
 
@@ -223,7 +241,7 @@ class CreateMemeActivity : AppCompatActivity() {
 
     private fun store(bitmap: Bitmap, filename: String) {
         val dirPath =
-            Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).absolutePath
+            Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).absolutePath
         val dir = File(dirPath, "MeMe")
         if (!dir.exists()) {
             dir.mkdir()

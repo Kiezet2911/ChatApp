@@ -90,6 +90,7 @@ class ChatLogActivity : AppCompatActivity(), GiphyDialogFragment.GifSelectionLis
             Loading!!.setMessage("Xin Đợi Trong Giây Lát")
             Loading!!.show()
         }
+
         nhantinnhan()
 
         gui_button_chat_log.setOnClickListener {
@@ -138,7 +139,7 @@ class ChatLogActivity : AppCompatActivity(), GiphyDialogFragment.GifSelectionLis
     private fun nhantinnhan() {
         val fromId = FirebaseAuth.getInstance().uid
         val toId = toUser?.uid
-        val ref = FirebaseDatabase.getInstance().getReference("user-messages/$fromId/$toId")
+        val ref = FirebaseDatabase.getInstance().getReference("/user-messages/$fromId/$toId")
         ref.addChildEventListener(object : ChildEventListener {
             @SuppressLint("SimpleDateFormat")
             override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
